@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --text-404: 'Inconsolata', monospace;
+    --text-card: 'Space Mono', monospace;
+    --title-btn-color:#333333;
+    --text-color:#4F4F4F;
+    --btn-text:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container-404{
+    width: 100%;
+    height: 100vh;
+}
+
+.title-404{
+    font-family: var(--text-404);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: var(--title-btn-color);
+    padding: 20px 0 20px 30px;
+}
+
+.content-404{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-img{
+    width: 300px;
+}
+
+.img-scare{
+    width: 100%;
+}
+
+.text-404{
+    font-family: var(--text-card);
+    padding: 20px;
+}
+
+.title-text{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: var(--title-btn-color);
+}
+
+.text-paragraph{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: var(--text-color);
+    padding: 30px 10px;
+}
+
+.btn-404{
+    background-color: var(--title-btn-color);
+    padding: 25px 45px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--btn-text);
+    border: none;
+    cursor: pointer;
+}
+
+@media(min-width:1139px){
+
+    .content-404{
+    margin-top: 50px;
+    }
+    .container-img {
+        width: 500px;
+    }
+
+    .text-404 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .title-text {
+        width:600px;
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+    }
+    
+    .text-paragraph {
+        width: 400px;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+    }
+    
+    .btn-404 {
+        padding: 20px;
+        width: 200px; 
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        text-transform: uppercase;
+    }
+}
